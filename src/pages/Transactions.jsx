@@ -31,13 +31,15 @@ const Transactions = () => {
   };
 
   const exportToCSV = () => {
-    const headers = ['Date', 'Item Code', 'Item Name', 'Action', 'User', 'Notes'];
+    const headers = ['Date', 'Item Code', 'Item Name', 'Action', 'User', 'Checkout Person', 'Project Name', 'Notes'];
     const rows = transactions.map(t => [
       new Date(t.timestamp).toLocaleString(),
       t.itemCode,
       t.itemName,
       t.action,
       t.userName,
+      t.checkoutPerson || '',
+      t.projectName || '',
       t.notes || ''
     ]);
 
