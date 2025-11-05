@@ -92,6 +92,10 @@ export const AuthProvider = ({ children }) => {
   };
 
   const canModify = () => {
+    return user?.role === 'admin'; // Only admin can add/edit/delete items
+  };
+
+  const canCheckInOut = () => {
     return user?.role === 'admin' || user?.role === 'staff';
   };
 
@@ -103,6 +107,7 @@ export const AuthProvider = ({ children }) => {
     isAdmin,
     canManageUsers,
     canModify,
+    canCheckInOut,
     loading,
   };
 

@@ -59,7 +59,7 @@ function App() {
             <Route 
               path="dashboard" 
               element={
-                <RoleProtectedRoute allowedRoles={['admin', 'staff', 'viewer']}>
+                <RoleProtectedRoute allowedRoles={['admin', 'staff']}>
                   <Dashboard />
                 </RoleProtectedRoute>
               } 
@@ -67,7 +67,7 @@ function App() {
             <Route 
               path="items" 
               element={
-                <RoleProtectedRoute allowedRoles={['admin', 'staff', 'viewer']}>
+                <RoleProtectedRoute allowedRoles={['admin', 'staff']}>
                   <Items />
                 </RoleProtectedRoute>
               } 
@@ -75,7 +75,7 @@ function App() {
             <Route 
               path="checked-out" 
               element={
-                <RoleProtectedRoute allowedRoles={['admin', 'staff', 'viewer']}>
+                <RoleProtectedRoute allowedRoles={['admin', 'staff']}>
                   <CheckedOut />
                 </RoleProtectedRoute>
               } 
@@ -83,7 +83,7 @@ function App() {
             <Route 
               path="scanner" 
               element={
-                <RoleProtectedRoute allowedRoles={['admin', 'staff', 'viewer']}>
+                <RoleProtectedRoute allowedRoles={['admin', 'staff']}>
                   <Scanner />
                 </RoleProtectedRoute>
               } 
@@ -91,7 +91,7 @@ function App() {
             <Route 
               path="transactions" 
               element={
-                <RoleProtectedRoute allowedRoles={['admin', 'staff', 'viewer']}>
+                <RoleProtectedRoute allowedRoles={['admin', 'staff']}>
                   <Transactions />
                 </RoleProtectedRoute>
               } 

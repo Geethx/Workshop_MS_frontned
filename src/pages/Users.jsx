@@ -281,7 +281,7 @@ const Users = () => {
                       disabled
                     />
                   ) : (
-                    // Creating new user or editing staff/viewer/admin
+                    // Creating new user or editing staff/admin
                     <select
                       value={formData.role}
                       onChange={(e) => setFormData({ ...formData, role: e.target.value })}
@@ -290,7 +290,6 @@ const Users = () => {
                     >
                       <option value="admin">Admin</option>
                       <option value="staff">Staff</option>
-                      <option value="viewer">Viewer</option>
                     </select>
                   )}
                 </div>

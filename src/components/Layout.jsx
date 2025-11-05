@@ -25,11 +25,11 @@ const Layout = () => {
   };
 
   const navigation = [
-    { name: 'Dashboard', href: '/dashboard', icon: FiHome, roles: ['admin', 'staff', 'viewer'] },
-    { name: 'Items', href: '/items', icon: FiPackage, roles: ['admin', 'staff', 'viewer'] },
-    { name: 'Checked Out Items', href: '/checked-out', icon: FiAlertCircle, roles: ['admin', 'staff', 'viewer'] },
-    { name: 'Check In/Out', href: '/scanner', icon: FiCheckSquare, roles: ['admin', 'staff', 'viewer'] },
-    { name: 'Transactions', href: '/transactions', icon: FiActivity, roles: ['admin', 'staff', 'viewer'] },
+    { name: 'Dashboard', href: '/dashboard', icon: FiHome, roles: ['admin', 'staff'] },
+    { name: 'Items', href: '/items', icon: FiPackage, roles: ['admin', 'staff'] },
+    { name: 'Checked Out Items', href: '/checked-out', icon: FiAlertCircle, roles: ['admin', 'staff'] },
+    { name: 'Check In/Out', href: '/scanner', icon: FiCheckSquare, roles: ['admin', 'staff'] },
+    { name: 'Transactions', href: '/transactions', icon: FiActivity, roles: ['admin', 'staff'] },
   ];
 
   if (user?.role === 'admin' || user?.role === 'user-admin') {
